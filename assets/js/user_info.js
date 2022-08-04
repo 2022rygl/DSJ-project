@@ -1,4 +1,6 @@
 const form = layui.form
+const layer = layui.layer // 获取 表格数据
+
 // 自定义校验规则
 form.verify({
   nickname: (val) => {

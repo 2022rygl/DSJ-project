@@ -1,3 +1,5 @@
+
+const layer = layui.layer // 获取 表格数据
 // 1.1 获取裁剪区域的 DOM 元素
 var $image = $('#image')
 // 1.2 配置选项
