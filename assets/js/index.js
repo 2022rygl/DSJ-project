@@ -1,14 +1,14 @@
 // 获取用户基本信息
-const getUserInfo = () => {
+function getUserInfo() {
   $.ajax({
     type: 'GET',
     url: '/my/userinfo',
     data: null,
     success: (res) => {
-      console.log(res)
+      // console.log(res)
       const { data, status, message } = res
-      renderAvatar(data)
       if (res.status !== 0) return layer.msg(message)
+      renderAvatar(data)
     },
   })
 }
