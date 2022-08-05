@@ -93,7 +93,7 @@ const publishArticle = (fd) => {
       layer.msg(message)
       if (res.status !== 0) return
       // 发布文章成功后，跳转到文章列表页面
-      // location.href = '/article/art_list.html'
+      location.href = 'art_list.html'
     },
   })
 }
